@@ -6,8 +6,7 @@ from transformers.file_utils import ModelOutput
 # from transformers.generation_utils import *
 # from transformers.generation_beam_search import *
 
-from transformers.generation import GenerationMixin
-from transformers.generation_beam_search import BeamSearchScorer, BeamSearchDecoderOnlyOutput
+from transformers.generation import BeamSearchScorer, beam_search, GenerationMixin
 
 
 import copy
