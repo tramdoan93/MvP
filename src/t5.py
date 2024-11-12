@@ -8,6 +8,7 @@ from transformers.file_utils import ModelOutput
 
 # from transformers.generation import BeamSearchScorer, beam_search, GenerationMixin
 import transformers
+from transformers import EncoderDecoderCache
 from transformers.models.t5.modeling_t5 import T5PreTrainedModel, T5Stack
 
 
