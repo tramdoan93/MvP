@@ -5,9 +5,10 @@ from transformers.models.t5.modeling_t5 import *
 from transformers.file_utils import ModelOutput
 # from transformers.generation_utils import *
 # from transformers.generation_beam_search import *
-# from transformers import T5ForConditionalGeneration, T5Config, Seq2SeqLMOutput -- new
-from transformers import BeamSearchEncoderDecoderModel  # if you need beam search specific functionality
-from transformers import GenerationConfig, LogitsProcessorList, BeamSearchScorer
+
+from transformers.generation import GenerationMixin
+from transformers.generation_beam_search import BeamSearchScorer, BeamSearchDecoderOnlyOutput
+
 
 import copy
 
