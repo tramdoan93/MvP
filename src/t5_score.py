@@ -17,8 +17,6 @@ from transformers.file_utils import ModelOutput
 from transformers.generation import BeamSearchScorer, beam_search, GenerationMixin
 import copy
 
-logger = logging.getLogger(__name__)
-
 _CONFIG_FOR_DOC = "T5Config"
 
 PARALLELIZE_DOCSTRING = r"""
