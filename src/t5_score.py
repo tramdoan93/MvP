@@ -5,14 +5,17 @@
 # from transformers.file_utils import ModelOutput
 # from transformers.generation_utils import *
 # from transformers.generation_beam_search import *
-import copy
+# import copy
 
 import torch.nn as nn
 import torch
-from transformers import T5ForConditionalGeneration, T5Stack, T5Config, Seq2SeqLMOutput
+from transformers.models.t5.modeling_t5 import *
+from transformers.file_utils import ModelOutput
+# from transformers.generation_utils import *
+# from transformers.generation import GenerationMixin
+# from transformers.generation_beam_search import *
+from transformers.generation import BeamSearchScorer, beam_search, GenerationMixin
 import copy
-from torch.nn import CrossEntropyLoss
-import logging
 
 logger = logging.getLogger(__name__)
 
