@@ -1,11 +1,20 @@
 # based on: https://github.com/hmt2014/AspectQuad/blob/main/DLO/t5_score.py
+# import torch.nn as nn
+# import torch
+# from transformers.models.t5.modeling_t5 import *
+# from transformers.file_utils import ModelOutput
+# from transformers.generation_utils import *
+# from transformers.generation_beam_search import *
+import copy
+
 import torch.nn as nn
 import torch
-from transformers.models.t5.modeling_t5 import *
-from transformers.file_utils import ModelOutput
-from transformers.generation_utils import *
-from transformers.generation_beam_search import *
+from transformers import T5ForConditionalGeneration, T5Stack, T5Config, Seq2SeqLMOutput
 import copy
+from torch.nn import CrossEntropyLoss
+import logging
+
+logger = logging.getLogger(__name__)
 
 _CONFIG_FOR_DOC = "T5Config"
 
