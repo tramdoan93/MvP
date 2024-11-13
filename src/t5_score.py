@@ -14,9 +14,9 @@ from transformers.file_utils import ModelOutput
 # from transformers.generation_utils import *
 # from transformers.generation import GenerationMixin
 # from transformers.generation_beam_search import *
-# from transformers.generation import BeamSearchScorer, beam_search, GenerationMixin
-from transformers.models.t5.modeling_t5 import T5PreTrainedModel, T5Stack
-from transformers import EncoderDecoderCache
+from transformers.generation import BeamSearchScorer, beam_search, GenerationMixin
+# from transformers.models.t5.modeling_t5 import T5PreTrainedModel, T5Stack
+# from transformers import EncoderDecoderCache
 
 import copy
 
